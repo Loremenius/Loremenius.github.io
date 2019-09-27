@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--link to font awesome-->
+    <script src="https://kit.fontawesome.com/926f253d99.js" crossorigin="anonymous"></script>
+
+    <!--link to stylesheet-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navTextContainer">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="">Login</a>
+                <a href="">View Art</a>
+            </div>
+        </nav>
+
+        <div class="heading">
+            <h1>About</h1>
+        </div>
+    </header>
+
+    <section class="what-section">
+        <div class="section-head">
+            <h2>What is Artfolio</PROJECT></h2>
+            <img src="images/image2.jpg">
+        </div>
+
+        <div class="section-body">
+            <p>Artfolio is a space in which artists and art enthusiests can both share and appreciate art from artists all around the globe. Artists can upload their work and begin to piece together a portfolio while simultaniously sharing it for others' viewing pleasure.</p>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="section-head">
+            <h2>Our Team</h2>
+        </div>
+
+        <div class="section-body">
+            <div class="card">
+                <img class="desc1" src="images/team/catherine.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Catherine Stewart</h3>
+
+                <div class="modal hidden" id="desc1">
+                    <div class="desc">
+                        <img src="images/team/catherine.jpg" alt="">
+                        <div class="content">
+                            <p>I build software to bridge the gap between my love of language and my aspiration to rage against the dying of the light professionally. Look upon my works, ye mighty, and hire me!</p>
+                            <a href="https://github.com/katerinjo"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="desc2" src="images/team/marcellino.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Marcellino Fernandez</h3>
+                <div class="modal hidden" id="desc2">
+                    <div class="desc">
+                        <img src="images/team/marcellino.jpg" alt="">
+                        <div class="content">
+                            <p>I am Marcellino Fernandez, I am part of the Web UI. I am part of the WEB 24 cohort at Lambda school. In my free time I like to draw, play video games and sing.</p>
+                            <a href="https://github.com/Loremenius"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal2()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="desc3"  src="images/team/mark.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Mark French</h3>
+                <div class="modal hidden" id="desc3">
+                    <div class="desc">
+                        <img src="images/team/mark.jpg" alt="">
+                        <div class="content">
+                            <p>Mark is a full stack web developer with strong front-end upstream operational experience in equity derivatives and the oilfield services sectors.</p>
+                            <a href="https://github.com/juarezfrench"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal3()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="desc4"  src="images/team/vanna.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Vanna Sok</h3>
+                <div class="modal hidden" id="desc4">
+                    <div class="desc">
+                        <img src="images/team/vanna.jpg" alt="">
+                        <div class="content">
+                            <p>Full stack web developer from California US</p>
+                            <a href="https://github.com/vannasok"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal4()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img  class="desc5" src="images/team/ben.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Ben Allen</h3>
+                <div class="modal hidden" id="desc5">
+                    <div class="desc">
+                        <img src="images/team/ben.jpg" alt="">
+                        <div class="content">
+                            <p>Full Stack Web Dev - based in Houston TX</p>
+                            <a href="https://github.com/allenben746"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal5()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img  class="desc6" src="images/team/justin.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Justin Irabor</h3>
+                <div class="modal hidden" id="desc6">
+                    <div class="desc">
+                        <img src="images/team/justin.jpg" alt="">
+                        <div class="content">
+                            <p>Front-end software developer @ Lambda School. Curious about interactive screens and emotional experiences. Artist at heart and in practise. Lover of beautiful things.</p>
+                            <a href="https://github.com/vunderkind"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal6()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img  class="desc7" src="images/team/cody.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Cody Garrett</h3>
+                <div class="modal hidden" id="desc7">
+                    <div class="desc">
+                        <img src="images/team/cody.jpg" alt="">
+                        <div class="content">
+                            <p>Cody is a full stack web developer from Idaho. He is a code enthusiest who has a strong passion for creating websites. In his free time he enjoys hiking through the desert and online gaming.</p>
+                            <a href="https://github.com/CodyyLee"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal7()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img  class="desc8" src="images/team/marguel.jpg" alt="" onclick="toggleDisplay()">
+                <h3>Marguel Gutierrez</h3>
+                <div class="modal hidden" id="desc8">
+                    <div class="desc">
+                        <img src="images/team/marguel.jpg" alt="">
+                        <div class="content">
+                            <p>FullStack developer / Project Manager - Monclova, Mexico
+
+                                    ‘I like turtles ’ - Marguel Gutierrez</p>
+                            <a href="https://github.com/Marguelgtz"><button><i class="fab fa-github-square"><span>Github</span></i></button></a>
+                            <p class='close' onclick="hideModal8()">Close</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+            <div class="footerNavContent">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About Us</a>
+                    <a href="">Login</a>
+                    <a href="">View Art</a>
+            </div>
+        </footer>
+
+    <!--link to js file-->
+    <script src="main.js"></script>
+</body>
+</html>

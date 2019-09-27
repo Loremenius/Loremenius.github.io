@@ -1,0 +1,55 @@
+//variables
+
+// @heading-font: ;
+// @body-font: ;
+
+//media query variables
+@tablet: ~'(min-width: 767px)';
+@desktop: ~'(min-width: 1100px)';
+
+//mixins
+.display-flex(@justify, @align, @direction) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+//Mixins
+.flexBox(@justfiy:flex-start,@direction:row,@items:flex-start){
+    display:flex;
+    justify-content: @justfiy;
+    flex-direction: @direction;
+    align-items: @items;
+}
+
+//variables
+
+// //BlueTest
+// @h1Color:#023858;
+// @h2Color:#025372;
+// @h3Color:#025372;
+// @pColor:#023858;
+// @containerBgColor: #96C6DA;
+// @backgroundColor:#D8EBF2;
+// @navBarBgColor:#023858;
+// @navBarColor:#D8EBF2;
+
+//grayscale Color Scheme
+@h1Color:#0D0D0D;
+@h2Color:#403E3B;
+@h3Color:#403E3B;
+@pColor:#0F0F0F;
+@containerBgColor: #D9D4CD;
+@backgroundColor:#F2EDE5;
+@navBarBgColor:#0D0D0D;
+@navBarColor:#D9D4CD;
+
+@tablet: ~"(max-width:800px)";
+@containerSize: ~"(max-width:1000px)";
+@phone: ~"(max-width:500px)";
+
+//FontSize
+@h1Size:4rem;
+@h2Size:3.5rem;
+@h3Size:3rem;
+@pSize:2.5rem;

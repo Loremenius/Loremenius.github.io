@@ -1,0 +1,82 @@
+.container{
+    padding:20px 50px;
+    max-width: 1000px;
+    width: 100%;
+    height: 1250px;
+    margin: 0 auto; 
+    
+    .imgBanner img{
+        width:100%;
+        padding-bottom:15px;
+    }
+    .introContent{
+        h1{
+            padding-bottom: 15px;
+        }
+        p{
+            padding: 15px 0px;
+        }
+    }
+    .howToContent{
+        padding:0% 10%;
+        .flexBox(center,column,center);
+        img{
+            width:60%;
+        }
+        
+        p{
+            padding:10px;
+        }
+        button{
+            padding: 5px;
+            margin: 15px 0px;
+            width:30%;
+            border:2px solid black;
+            border-radius: 9px;
+            font-size: @pSize;
+            background-color: @backgroundColor;
+        }
+    }
+    .carousel-inner img {
+        width: 100%;
+        
+      }
+}
+
+@media @containerSize{
+    body{
+        background-color: @containerBgColor;
+    }
+    .container{
+        max-width: 90%;
+        padding:15px;
+
+    }
+}
+
+@media @tablet{
+    .container{
+        .howToContent{
+            padding: 0%;
+            .flexBox(center,column,center);
+            img{
+                width:100%;
+            }
+        }
+        #howTo2{
+            .flexBox(center,column-reverse,center);
+        }
+    }
+}
+
+@media @phone{
+    .container{
+        padding-bottom:0%;
+        height:1080px;
+        
+    }
+    h1{
+        font-size: @h2Size;
+    }
+}
+

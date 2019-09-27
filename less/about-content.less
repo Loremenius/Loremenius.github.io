@@ -1,0 +1,171 @@
+.what-section {
+    .display-flex(space-evenly, center, column);
+    width: 100%;
+    background-color: #D9D4CD;
+    padding: 3% 0;
+
+    @media @desktop {
+        flex-direction: row;
+    }
+
+    .section-head {
+        .display-flex(center, center, column);
+        width: 100%;
+
+        h2 {
+            font-size: 3rem;
+            margin: 5%;
+            color: #403E3B;
+
+            @media @tablet {
+                font-size: 5rem;
+            }
+        }//end of h2 tag
+
+        img {
+            width: 100%;
+            height: 200px;
+
+            @media @tablet {
+                height: 300px;
+            }
+        }//end of img tag
+    }//end of section-head
+
+    .section-body {
+        width: 100%;
+        text-align: center;
+
+        p {
+            font-size: 1.6rem;
+            padding: 5%;
+
+            @media @tablet {
+                font-size: 2.6rem;
+            }
+        }//end of p tag
+    }//end of section-body
+}//end of what-section
+
+.team-section {
+    .display-flex(space-evenly, center, column);
+    width: 100%;
+
+    .section-head {
+        margin: 5%;
+
+        h2 {
+            font-size: 3rem;
+            color: #403E3B;
+
+            @media @tablet {
+                font-size: 5rem;
+            }
+        }//end of h2 tag
+    }//end of section-head
+
+    .section-body   {
+        width: 100%;
+        .display-flex(space-evenly, center, row);
+        flex-wrap: wrap;
+
+        .card {
+            margin-bottom: 8%;
+            width: 250px;
+            height: 200px;
+
+            &:hover {
+                border: 1px solid #0F0F0F;
+            }
+
+            @media @tablet {
+               width: 300px;
+               height: 300px;
+            }
+
+            h3 {
+                font-size: 1.6rem;
+                text-align: center;
+                color: 0F0F0F;
+
+                @media @tablet {
+                    font-size: 2rem;
+                }
+            }//end of h3 tag
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .modal{
+                background-color: rgba(0,0,0,0.5);
+                z-index: 1;
+                width: 100vw;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                left: 0;
+                
+
+                .desc {
+                    padding: 5px;
+                    .display-flex(space-evenly, center, column);
+                    background-color: #D9D4CD;
+                    width: 80%;
+                    margin: auto;
+                    position: relative;
+                    top: 50%;
+                    transform: translateY(-50%);
+
+                    @media @tablet {
+                        .display-flex(space-evenly, center, row);
+                    }
+
+                    img {
+                        width: 90%;
+                        padding: 5%;   
+
+                        @media @tablet {
+                            width: 40%;
+                        }
+                    }//end of img tag
+
+                    .content {
+                        .display-flex(center, center, column);
+
+                        p {
+                            font-size: 1.8rem;
+                            text-align: center;
+                            width: 90%;//comment
+                            
+        
+                            @media @tablet {
+                                font-size: 2.5rem;
+                            }//end of media tag
+                        }//end of p tag
+    
+                        a {
+                            margin: 20px;
+
+                            button {
+                                font-size: 4rem;
+                                background-color: white;
+                                padding: 5px;
+                                margin: 5px;
+                            }//end of button tag
+                        }//end of a tag
+                    }//end of content class
+
+                    .close {
+                        text-decoration: underline;
+                        
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }//end of desc
+            }//end of modal
+        }//end of card
+    }//end of section-body
+}//end of team-section

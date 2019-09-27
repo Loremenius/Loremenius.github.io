@@ -1,0 +1,22 @@
+
+footer{
+    background-color: @navBarBgColor;
+    // height:5.8%;
+    .footerNavContent{
+        .flexBox(center,row,center);
+        a{
+            padding:2.5rem;
+            text-decoration: none;
+            font-size: @pSize - 1;
+            color: @navBarColor;
+        }
+    }
+    
+}
+@media @phone{
+    footer{
+        .footerNavContent{
+            padding:.15rem;
+        }
+    }
+}
