@@ -1,140 +1,235 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
-    <head>
-        <title>Art Porfolio - Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link href="css/index.css" rel="stylesheet">
+	<head>
+		<title>Marcellino Fernandez</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
 
-        <script> //JavaScript
-            let scheme = 0;
-            function changeColorScheme(){
-                const elementP = document.getElementsByTagName('p');
-                const elementH3 = document.getElementsByTagName('h3');
-                const elementH2 = document.getElementsByTagName('h2');
-                const elementH1 = document.getElementsByTagName('h1');
-                const elementA = document.getElementsByTagName('a');
-                const container = document.getElementsByClassName('container');
-                const body = document.getElementsByTagName('body');
-                const button = document.getElementsByTagName('button');
-                const nav = document.getElementsByTagName('nav');
-                const footer = document.getElementsByTagName('footer');
-                if (scheme === 0){
-                    for (let e of elementP) { e.style.color = "#023858"; }
-                    for (let e of elementH3) { e.style.color = "#025372"; }
-                    for (let e of elementH2) { e.style.color = "#025372"; }
-                    for (let e of elementH1) { e.style.color = "#023858"; }
-                    for (let e of elementA) { e.style.color = "#D8EBF2"; }
-                    for (let e of body) { e.style.backgroundColor = "#D8EBF2"; }
-                    for (let e of button) { e.style.backgroundColor = "#D8EBF2"; }
-                    for (let e of nav) { e.style.backgroundColor = "#023858"; }
-                    for (let e of footer) { e.style.backgroundColor = "#023858"; }
-                    for (let e of container) { e.style.backgroundColor = "#96C6DA"; }
-                    scheme = 1;
-                }else if (scheme === 1){
-                    for (let e of elementP) { e.style.color = "#0F0F0F"; }
-                    for (let e of elementH3) { e.style.color = "#403E3B"; }
-                    for (let e of elementH2) { e.style.color = "#403E3B"; }
-                    for (let e of elementH1) { e.style.color = "#0D0D0D"; }
-                    for (let e of elementA) { e.style.color = "#D9D4CD"; }
-                    for (let e of body) { e.style.backgroundColor = "#F2EDE5"; }
-                    for (let e of button) { e.style.backgroundColor = "#F2EDE5"; }
-                    for (let e of nav) { e.style.backgroundColor = "#0D0D0D"; }
-                    for (let e of footer) { e.style.backgroundColor = "#0D0D0D"; }
-                    for (let e of container) { e.style.backgroundColor = "#D9D4CD"; }
-                    scheme = 0;
-                }
-            }
-        </script>
-    </head>
-    <body>
-        <nav>
-            <div class="navTextContainer">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="">Login</a>
-                <a href="">View Art</a>
-            </div>
-            <button onclick="changeColorScheme()">Change Color Scheme</button>
-        </nav>
-        <div class="container">
-            <div class="introContent">
-                <h1>Welcome to the Art Porfolio!</h1>
-                <div class="imgBanner">
-                    <img src="pictures/eric-ward-P6NhhvGIL9k-unsplash.jpg">
-                </div>
-                <h2>What is the Art Portfolio?</h2>
-                <p>The Art Portfolio allows artists to post and show off their desired works. Anyone can observe an artist's work and potentially make contact with them.</p>
-            </div>
-            <h2>How does Art Portfolio work?</h2>
-                  <div id="demo" class="carousel slide" data-ride="carousel">
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Top</a></li>
+					<li><a href="#work">Work</a></li>
+					<li><a href="#portfolio">Portfolio</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
 
-                        <!-- Indicators -->
-                        <ul class="carousel-indicators">
-                          <li data-target="#demo" data-slide-to="0" class="active"></li>
-                          <li data-target="#demo" data-slide-to="1"></li>
-                         
-                        </ul>
-                      
-                        <!-- The slideshow -->
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                                <div class="howToContent" id="howTo1">
-                                    <img src="pictures/howToArtist.png">
-                                    <div class="howToText">
-                                        <h3>Artist:</h3>
-                                        <p>The artist can login and go to their portfolio page. There they can see all of their posts, create new posts, and edit old posts. You can start by clicking on the button below to login.</p>
-                                        <button href="">Login</button>
-                                    </div>
-                                </div>
-                          </div>
-                          <div class="carousel-item">
-                                <div class="howToContent">
-                                    <img src="pictures/howToViewer.png">
-                                    <div class="howToText">
-                                        <h3>Viewer:</h3>
-                                        <p>Anyone may view all of the art created and posted by the artists, no account needed. All the art is displayed without need to login and you can upvote the ones you like. Clicking on a art piece you like gives you more information. You can start viewing art by clicking the button below.</p>
-                                        <button href="">View Art</button>
-                                    </div>
-                                    
-                                </div>
-                          </div>
-                        </div>
-                      
-                        <!-- Left and right controls -->
-                        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                          <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#demo" data-slide="next">
-                          <span class="carousel-control-next-icon"></span>
-                        </a>
-                      
-                      </div>
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="container">
+					<div class="row">
+						<div class="col-4 col-5-large col-12-medium">
+							<span class="image fit"><img src="images/ordLogo5.5.png" alt="" /></span>
+						</div>
+						<div class="col-8 col-7-large col-12-medium">
+							<header>
+								<h1>Hi. I'm <strong>Marcellino Fernandez</strong>.</h1>
+							</header>
+							<p>And this is <strong>My Portfolio</strong>, a showcase of my work as a Web Developer and a little bit of my work in drawing and graphic design.</p>
+							<a href="#work" class="button large scrolly">Learn about what I do</a>
+						</div>
+					</div>
+				</div>
+			</article>
 
+		<!-- Work -->
+			<article id="work" class="wrapper style2">
+				<div class="container">
+					<header>
+						<h2>Here's all the stuff I do.</h2>
+					
+					</header>
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-comments"></span>
+								<h3>Drawing</h3>
+								<p>I enjoy drawing, I dont typically draw as much as I should or like but it is a hobby I very much enjoy.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-camera-retro"></span>
+								<h3>Web Development</h3>
+								<p>I have a good amount of web development experience starting since highschool. I plan to grow upon that knoweldge moving forward.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-thumbs-up"></span>
+								<h3>Digital Art</h3>
+								<p>I also enjoy creating digital art such as the occasional logo. my goal is to transition from traditional drawing to digital drawing and painting.</p>
+							</section>
+						</div>
+					</div>
+					<footer>
+					
+						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
+					</footer>
+				</div>
+			</article>
 
-        </div>
-        <footer>
-            <div class="footerNavContent">
-                    <a href="index.html">Home</a>
-                    <a href="about.html">About Us</a>
-                    <a href="">Login</a>
-                    <a href="">View Art</a>
-            </div>
-        </footer>
+		<!-- Portfolio -->
+			<article id="portfolio" class="wrapper style3">
+				<div class="container">
+					<header>
+						<h2>Here’s some stuff I made recently.</h2>
+						<p>Most of the work provided are projects while at Lambda School with a few other personal projects along side them.</p>
+					</header>
+					<div class="row">
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="2/index.html" class="image featured"><img src="images/UI-II.png" alt="" /></a>
+								<h3><a href="2/index.html">UI II Project</a></h3>
+								<p>Practicing with HTML semantic and CSS.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="1/great-idea/index.html" class="image featured"><img src="images/UI-III.png" alt="" /></a>
+								<h3><a href="1/great-idea/index.html">UI III Flexbox Project</a></h3>
+								<p>Practicing with Flexbox.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="5/index.html" class="image featured"><img src="images/sprintChallenge.png" alt="" /></a>
+								<h3><a href="5/index.html">User Interface Sprint Challenge</a></h3>
+								<p>Showcase of skills learned in the first Sprint at Lambda School.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="4/index.html" class="image featured"><img src="images/responsive.png" alt="" /></a>
+								<h3><a href="4/index.html">Responsive Web Design I Project</a></h3>
+								<p>Practicing Media Queries</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="images/dragonsFoundry.png" class="image featured"><img src="images/dragonsFoundry.png" alt="" /></a>
+								<h3><a href="http://dragonsfoundry.com/">Dragons Foundry</a></h3>
+								<p>Portfolio Website for my Father.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="bw-artportfolio/index.html" class="image featured"><img src="images/bw-art.png" alt="" /></a>
+								<h3><a href="bw-artportfolio/index.html">Art Portfolio Build Week</a></h3>
+								<p>The art portfolio was to help artists post their art. I created the home page. (I do not have the rest of the project. just the home page).</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="6/challenges/index.html" class="image featured"><img src="images/js-sprint.png" alt="" /></a>
+								<h3><a href="6/challenges/index.html">Javascript Sprint Challenge</a></h3>
+								<p>Javascript challenge to test my Javascript knoweldge.</p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="7/index.html" class="image featured"><img src="images/DOM-I.png" alt="" /></a>
+								<h3><a href="7/index.html">DOM-I</a></h3>
+								<p>Practice with DOM </p>
+							</article>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<article class="box style2">
+								<a href="8/index.html" class="image featured"><img src="images/AJS-sprint.png" alt="" /></a>
+								<h3><a href="8/index.html">Applied Javascript Sprint Challenge</a></h3>
+								<p>A challenge to test my skills on DOM and creation of components.</p>
+							</article>
+						</div>
+					</div>
+					<footer>
+						
+						<a href="#contact" class="button large scrolly">Get in touch with me</a>
+					</footer>
+				</div>
+			</article>
 
+		<!-- Contact -->
+			<article id="contact" class="wrapper style4">
+				<div class="container medium">
+					<header>
+						<h2>Have me make stuff for you.</h2>
+						<p>Any chance to create is an amazing opportunity to help me grow as a developer and as an artist.</p>
+					</header>
+					<div class="row">
+						<div class="col-12">
+							<form method="post" action="#">
+								<div class="row">
+									<div class="col-6 col-12-small">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="col-6 col-12-small">
+										<input type="text" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="col-12">
+										<input type="text" name="subject" id="subject" placeholder="Subject" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear Form" class="alt" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="col-12">
+							<hr />
+							<h3>Find me on ...</h3>
+							<ul class="social">
+								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
+								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
+								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+								<!--
+								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
+								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
+								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
+								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
+								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
+								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
+								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
+								-->
+							</ul>
+							<hr />
+						</div>
+					</div>
+					<footer>
+						<ul id="copyright">
+							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+				</div>
+			</article>
 
-    </body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
 
-
-
-
-
-
-
-
+	</body>
 </html>
